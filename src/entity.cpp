@@ -6,6 +6,7 @@
 // Always either "Player" or "Enemy"
 Entity::entity::entity(std::string named) {
 	this->name = named;
+	// Make sure they start with full hp
 	this->full_hp();
 }
 
@@ -17,6 +18,7 @@ void Entity::entity::full_hp() {
 void Entity::entity::reduce_hp(int reduce_by) {
 	this->hp -= reduce_by;
 	// Safety check to never fall below 0
+	// NOTE: Maybe allow negatives & resolve ties by overkill?
 	if (this->hp < 0) {
 		this->hp = 0;
 	}

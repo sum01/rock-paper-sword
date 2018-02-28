@@ -4,8 +4,9 @@
 namespace Attack {
 class attack {
 protected:
-	// Set defaults for safety
+	// Describes the damage done by the attack
 	int damage;
+	// Describes if the attack can have dmg absorbed by a block
 	bool block_reduces;
 public:
 	void set_dmg(int);

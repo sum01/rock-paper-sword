@@ -8,7 +8,7 @@ namespace Entity {
 // Inherit our moveset so we can cast spells, swing a sword, and shield bash
 class entity : public Moveset::sword, public Moveset::fireball, public Moveset::shieldbash {
 protected:
-	// Entity stats (health/mana/attack power)
+	// Entity's health
 	int hp;
 	// Hold a name for printing out
 	std::string name;

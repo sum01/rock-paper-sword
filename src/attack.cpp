@@ -1,8 +1,6 @@
 #include "attack.hpp"
 // For rounding
 #include <cmath>
-// Tell them they were blocked
-#include <iostream>
 
 void Attack::attack::set_dmg(int dmg) {
 	this->damage = dmg;
